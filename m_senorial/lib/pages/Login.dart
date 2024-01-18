@@ -17,6 +17,10 @@ class Login extends StatelessWidget{
     void signUpIn() {
       Navigator.pushNamed(context, '/signup');
     }
+    void ForgotPassword(){
+    Navigator.pushNamed(context, '/forgetpassword');
+   }
+
     return  Scaffold(
       body:SingleChildScrollView(child: Column(
         children: [

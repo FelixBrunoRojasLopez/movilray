@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:m_senorial/pages/ForgetPassword.dart';
 import 'package:m_senorial/pages/SigUp.dart';
 import 'package:m_senorial/pages/login.dart';
 
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
       routes:{
         '/':(context) => Login(),
         '/signup':(context) => Sigup(),
+        '/forgetpassword':(context) => ForgetPassword(),
       }
       //home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );

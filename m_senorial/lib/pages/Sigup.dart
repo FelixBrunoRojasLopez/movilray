@@ -13,7 +13,7 @@ class Sigup extends StatelessWidget{
   final confirmeControlle = TextEditingController();
 
   void SignUp(){}
-
+  
   @override
   Widget build(BuildContext context){
     return Scaffold(
