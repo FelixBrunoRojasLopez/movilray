@@ -12,7 +12,7 @@ class Sigup extends StatelessWidget{
   final passwordControlle = TextEditingController();
   final confirmeControlle = TextEditingController();
 
-  void SignUp(){}
+  void signUp(){}
   
   @override
   Widget build(BuildContext context){
@@ -68,7 +68,7 @@ class Sigup extends StatelessWidget{
             ),
           const SizedBox(height: 21,),
           //Button
-          MyButton(onTap: SignUp,text: 'Sign In'),
+          MyButton(onTap: signUp,text: 'Sign In'),
         ],
       ),
       ),

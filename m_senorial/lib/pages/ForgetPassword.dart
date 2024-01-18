@@ -10,7 +10,7 @@ class ForgetPassword extends StatelessWidget{
   ForgetPassword({super.key});
 
   final gmailController    = TextEditingController();
-   void ForgotPassword(){
+   void forgotPassword(){
     //Navigator.pushNamed(context, '/forgetpassword');
    }
   @override
@@ -39,7 +39,7 @@ class ForgetPassword extends StatelessWidget{
             ),
           const SizedBox(height: 6,), 
           //Button
-          MyButton(onTap: ForgotPassword,  text: 'Send Code'),
+          MyButton(onTap: forgotPassword,  text: 'Send Code'),
         ],
       ),
       ),

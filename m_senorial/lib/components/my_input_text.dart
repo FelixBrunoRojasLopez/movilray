@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyInputText extends StatelessWidget{
-  final controller;
+  final dynamic controller;
   final String hintText;
   final bool obscureText;
   const MyInputText({
@@ -25,7 +25,7 @@ class MyInputText extends StatelessWidget{
           focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.grey)
           ), 
-          fillColor: Color.fromRGBO(236, 236, 236, 1),
+          fillColor: const Color.fromRGBO(236, 236, 236, 1),
           filled: true,
           hintText: hintText,
         ),

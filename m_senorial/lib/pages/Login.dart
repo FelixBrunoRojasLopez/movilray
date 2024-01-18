@@ -17,8 +17,8 @@ class Login extends StatelessWidget{
     void signUpIn() {
       Navigator.pushNamed(context, '/signup');
     }
-    void ForgotPassword(){
-    Navigator.pushNamed(context, '/forgetpassword');
+    void forgotPassword(){
+      Navigator.pushNamed(context, '/forgetpassword');
    }
 
     return  Scaffold(
@@ -82,23 +82,26 @@ class Login extends StatelessWidget{
             ),
           const SizedBox(height: 30,),
           //Forgot Password
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 25),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Rember me",
                   style: TextStyle(
                     color: Color.fromRGBO(126,138,151,1)
                   ),
                 ),
-                Text(
-                  "Forgot Password",
-                  style: TextStyle(
-                    color: Color.fromRGBO(255, 145, 15, 1)
+                InkWell(
+                  onTap: () => forgotPassword(),
+                  child: const Text(
+                    "Forgot Password",
+                    style: TextStyle(
+                      color: Color.fromRGBO(255, 145, 15, 1)
+                    ),
                   ),
-                ), 
+                ),
               ],
               ),
           ),
@@ -107,26 +110,29 @@ class Login extends StatelessWidget{
           MyButton(onTap: signUpIn,text: "Sign In"),
           const SizedBox(height: 27,),
           //Txt 
-          const Padding(
-            padding: EdgeInsets.all(0),
+          Padding(
+            padding: const EdgeInsets.all(0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Don't have an account?",
                   style: TextStyle(
                     color: Color.fromRGBO(100, 105, 130, 1),
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(width: 10,),
-                Text(
-                  "SING UP",
-                  style: TextStyle(
-                    color: Color.fromRGBO(255, 118, 34, 1),
-                    fontSize: 16,
-                  ),
-                ),
+                const SizedBox(width: 10,),
+                InkWell(
+                  onTap: () => signUpIn(),
+                  child: const Text(
+                    "SING UP",
+                    style: TextStyle(
+                      color: Color.fromRGBO(255, 118, 34, 1),
+                      fontSize: 16,
+                    ),
+                    ),
+                ), 
               ],
             ),
           ),
