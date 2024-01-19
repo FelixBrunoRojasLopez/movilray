@@ -14,6 +14,9 @@ class Login extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
+    void signIn(){
+      Navigator.pushNamed(context, '/home');
+    }
     void signUpIn() {
       Navigator.pushNamed(context, '/signup');
     }
@@ -107,7 +110,7 @@ class Login extends StatelessWidget{
           ),
           const SizedBox(height: 42,),
           //Button de login
-          MyButton(onTap: signUpIn,text: "Sign In"),
+          MyButton(onTap: signIn,text: "Sign In"),
           const SizedBox(height: 27,),
           //Txt 
           Padding(

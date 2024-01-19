@@ -6,10 +6,11 @@ class Home extends StatelessWidget{
   @override
   Widget build (BuildContext context){
     return Scaffold(
-      body: Column(
+      appBar: AppBar(),
+      body:const Column(
         
         children:[ 
-          const SizedBox(height: 131,),
+          SizedBox(height: 131,),
           Center(
             child: SquareIcon(imagePath: 'lib/images/google.png'),
           ), 
